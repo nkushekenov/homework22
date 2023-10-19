@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"><!-- Убедитесь, что ссылка на файл CSS верна -->
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
